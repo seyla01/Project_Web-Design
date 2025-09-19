@@ -13,18 +13,18 @@
     h1 {
       text-align: center;
       margin-bottom: 30px;
-      color: #ff9800;
+      margin-top: 15px;
+      color: #fdfcfc;
     }
-        /* Header */
     .section-header {
-      display: flex;
+      
       justify-content: space-between;
       align-items: center;
       margin-bottom: 20px;
     }
 
     .section-header h2 {
-      color: #ff5722;
+      color: #fbfbfa;
       font-size: 20px;
       margin: 0;
     }
@@ -40,9 +40,9 @@
     }
 
     .movie-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 16px;
     }
 
     .movie-card {
@@ -110,3 +110,23 @@
       font-size: 12px;
       color: #ff9800;
     }
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px 40px;
+        justify-content: center;
+}
+    .categories{
+       padding: 10px 20px;
+      border: none;
+      background: #ffffff;
+      color: #000;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .categories button:hover {
+  background: #ddd;
+}
